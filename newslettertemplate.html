@@ -1,0 +1,21 @@
+---
+layout: none
+---
+
+<!-- site logo -->
+<a href="{{site.url}}"><img src="{{site.url}}/{{site.logo}}"></a> 
+
+
+{% for post in site.posts limit:6 %}
+<h2>{{post.title}}</h2>
+
+<!-- ORIGINLA VERSION: Use a summary tag and a a bitlink property in the frontmatterof each post
+<p>{{post.summary}} <a href="{{post.bitlink}}">Read more &raquo;</a></p> 
+-->
+<p>{{ post.excerpt }} <a href="{{post.url}}">Read more &raquo;</a></p>
+{% endfor %}
+
+<!-- advertising -->
+<p><a href="http://idratherbewriting.com/images/ads/adobefm.jpg"><img src="http://idratherbewriting.com/images/ads/adobefm.jpg"></p></a>
+
+

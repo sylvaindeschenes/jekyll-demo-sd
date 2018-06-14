@@ -1,0 +1,52 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+				{% include breadcrumbs.html %}
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+		
+		<!-- Include Auto-resize images from JekyllCodex.org / Not working ATM-->
+		{%- if page.image -%}
+			<img src="https://images.weserv.nl/?url={{ site.domain }}{{ page.image }}&w=100&h=100&output=jpg&q=65" />
+		{%- endif -%}
+		
+		<!-- Include New window fix from JekyllCodex.org -->
+		{% include new-window-fix.html %}
+			
+		<!-- Include jquery/1.11.3 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+		<!-- Include Bootstrap 4  -->
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+		
+		<!-- Include Lightbox from JekyllCodex.org -->
+		{% include lightbox.html %}
+		<!-- Include Open embed from JekyllCodex.org -->
+		{% include open-embed.html %}
+		<!-- Include Text expand from JekyllCodex.org -->
+		{% include text-expand.html %}
+		<!-- Include Better forms from JekyllCodex.org -->
+		{% include better-forms.html %}
+		<!-- Include Lazy loading from JekyllCodex.org -->
+		{% include lazyload.html %}
+		
+	</body>
+
+</html>

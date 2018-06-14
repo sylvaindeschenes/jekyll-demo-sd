@@ -1,0 +1,79 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Sylvain Deschenes | Startup Advisor, Agile Operation and Project Manager
+email: contact@sylvaind.me
+description: >- # this means to ignore newlines until "baseurl:"
+  Empowers teams to efficiently deliver value and innovation - Data-driven user experience oriented | PMP, PSPO, PSM | Agile, Scrum, Kanban, Lean
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sylvaindeschenes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+domain: sylvaindeschenes.github.io
+
+logo: /assets/siteimages/sitelogo.png
+
+# Social profiles user name for _includes/social.html in _includes/footer.html
+linkedin_username: sylvaind
+github_username:  sylvaindeschenes
+rss: /feed.xml
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: sylvaind
+
+# Pages to display in the menu
+header_pages:
+  - about.md
+  - articles.md
+
+# Show a short preview of the post in the post list (located on _layout/blog.html)
+# show_excerpts: true
+
+# Set SEO Friendly URL for Blog Post
+# permalink: /blog/:title/
+permalink: /blog/:categories/:title/
+
+## _layouts/compress.html settings
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: true
+  profile: false
+  startings: [html, head, body]
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
