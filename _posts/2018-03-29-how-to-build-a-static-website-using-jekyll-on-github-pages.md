@@ -36,12 +36,12 @@ The options I have chosen during the creation of this website have been based on
 12. [Make blog post URLs SEO Friendly](#make-blog-post-urls-seo-friendly)
 13. [Add Contact or any other Forms](#add-contact-or-any-other-forms)  
 14. [Add Comments on blog articles using Disqus](#add-comments-on-blog-articles-using-disqus)
-1. [Setup Google Analytics](#setup-google-analytics)    
+15. [Setup Google Analytics](#setup-google-analytics)    
 
-1. [Setup a Custom Domain name](#setup-a-custom-domain-name) ***To be completed***
-1. [Speed Optomisation](#speed-optomisation)  
+16. [Setup a Custom Domain name](#setup-a-custom-domain-name)
+17. [Speed Optomisation](#speed-optomisation)  
  
-1. [Some Helful Tips](#some-helful-tips)  
+18. [Some Helful Tips](#some-helful-tips)  
 
 ### Setup GitHub-Pages
 
@@ -295,7 +295,19 @@ Ref.: [https://stackoverflow.com/questions/17207458/how-to-add-google-analytics-
 
 ### Setup a Custom Domain name
 
-***To be completed***
+Go to your domain name provider  
+Purchasse a domain (if you don't have one yet)  
+Go to "Manage DNS"  
+Enter 4 "A" and one "CNAME" reccords:
+~~~
+A @ 185.199.108.153 TTL 600 Seconds
+A @ 185.199.109.153 TTL 600 Seconds
+A @ 185.199.110.153 TTL 600 Seconds
+A @ 185.199.111.153 TTL 600 Seconds
+CNAME WWW username.github.io
+~~~
+Ref.:
+[https://help.github.com/articles/troubleshooting-custom-domains/#dns-configuration-errors](https://help.github.com/articles/troubleshooting-custom-domains/#dns-configuration-errors) [https://hackernoon.com/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b](https://hackernoon.com/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b)
 
 ### SEO Improvment 
 Use canonical tag inside the head tag to have the SEO boots linking the "pagename/" and "pagename/index.html"  
