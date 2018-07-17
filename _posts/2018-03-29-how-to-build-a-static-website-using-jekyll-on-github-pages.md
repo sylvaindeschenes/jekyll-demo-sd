@@ -342,6 +342,20 @@ To change its setting, take a look at the documentation [http://jch.penibelst.de
 *I have set `blanklines: true` to solve an issue with [Lunr.js](https://lunrjs.com) search feature. All other settings are the ones from the documentation.  
 *To avoid braking other html script, replace all comment format like this `// Comments` of any new included html files by this structure`/* Comments */`
 
+#### Use Cloudflare
+Create an account on [cloudflare.com](https://cloudflare.com)
+Folow the wizard guide until the end to pull your DNS and change your name server.  
+  
+Modify the following settings:  
+  
+Crypto  
+  
+Speed  
+  
+Caching  
+  
+Page Rules  
+
 ## Some Helful Tips
 
 ### Jekyll. 
