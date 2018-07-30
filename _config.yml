@@ -18,9 +18,9 @@ email: contact@sylvaind.me
 description: >- # this means to ignore newlines until "baseurl:"
   Empowers teams to efficiently deliver value and innovation - Data-driven user experience oriented | PMP, PSPO, PSM | Agile, Scrum, Kanban, Lean
 baseurl: "/jekyll-demo-sd" # the subpath of your site, e.g. /blog
-url: "https://sylvaindeschenes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://sylvaind.me # the base hostname & protocol for your site, e.g. http://example.com
 
-domain: sylvaindeschenes.github.io
+domain: sylvaind.me/jekyll-demo-sd
 
 logo: /assets/siteimages/sitelogo.png
 
