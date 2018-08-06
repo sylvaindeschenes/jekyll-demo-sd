@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to build a Static Website using Jekyll on GitHub-Pages"
+title:  "Build a Static Website using Jekyll on GitHub-Pages"
 date:   2018-03-29 10:00:00 -0400
 categories: Web-Development
 ---
